@@ -4,12 +4,11 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "persepsi_korupsi";
-$port = 3307;
+$port = 3306;
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $dbname,$port);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     die("Koneksi gagal: " . $conn->connect_error);
 }
-?>
